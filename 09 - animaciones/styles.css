@@ -1,0 +1,28 @@
+.btn {
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-modern {
+    /* El botón se traslade -5px en el eje de las Y
+
+    Se añada una sombra
+
+    El color de fondo del botón cambie
+
+    El color del texto cambie
+
+    Todo esto con una transición de 0.4s */
+    background-color: #37515F;
+    color: #fff;
+}
+
+.btn-modern:hover {
+    transform: translateY(-5px);
+    box-shadow: 10px 5px 5px #E4959E;
+    background-color: #1F0812;
+    color: #F3B3A6;
+    transition: all 0.4s ease-in-out;
+}
