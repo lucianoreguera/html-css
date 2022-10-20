@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 10px;
+    background-color: bisque;
+    padding: 10px 0;
+}
+
+.content {
+    display: flex;
+    gap: 10px;
+}
+
+.sidebar {
+    background-color: cadetblue;
+    color: white;
+    padding: 15px;
+    min-width: 20rem;
+}
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.main {
+    flex-grow: 1;
+    background-color: coral;
+    color: white;
+    padding: 15px;
+}
+
+@media (max-width: 640px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .sidebar li {
+        display: inline;
+    }
+}
