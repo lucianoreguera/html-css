@@ -1,0 +1,37 @@
+@use 'mixins/buttons';
+@use '../colors';
+
+.btn-main {
+    @include buttons.btn-base();
+    background-color: colors.$color-main;
+    color: white;
+    border: solid 1px colors.$color-main;
+
+    &:hover {
+        background-color: white;
+        color: colors.$color-main;
+        border: solid 1px colors.$color-main;
+    }
+
+    &-small {
+        @extend .btn-main;
+        @include buttons.btn-small();
+    }
+}
+
+.btn-secondary {
+    @include buttons.btn-base();
+    color: #000000;
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+        color: #888;
+        border: none;
+    }
+
+    &-small {
+        @extend .btn-secondary;
+        @include buttons.btn-small();
+    }
+}

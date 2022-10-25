@@ -1,0 +1,26 @@
+@use '../colors' as c;
+
+.benefit {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .description {
+        .title {
+            font-size: 1.4rem;
+        }
+
+        .text {
+            color: #888888;
+            font-weight: 400;
+        }
+    }
+
+    .cta {
+        color: c.$color-main;
+        margin-top: 3rem;
+        font-weight: 600;
+        font-size: .9rem;
+    }
+
+}
